@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#21a5de</color>
+    <color name="colorPrimaryDark">#1fa0d7</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="textColor">#125f80</color>
+    <color name="bgColor">#8e92cbed</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#FFffffff</color>
+    <color name="color_header_footer">#0014ff</color>
+    <color name="color_blue">#737eff</color>
+    <color name="color_row">#49bfc4ff</color>
+    <color name="color_num">#01a6a9</color>
+    <color name="color_red">#d20404</color>
+    <color name="color_green">#0fa901</color>
+    <color name="light">#493770ff</color>
+    <color name="light_green">#493eff37</color>
+
+    <color name="colorTransparent">#c824232b</color>
+    <color name="colorBlue">#98a5cc</color>
+    <color name="textGrid">#042e64</color>
+    <color name="colorGreen">#01ac0a</color>
+    <color name="colorGreenLight">#41da15</color>
+    <color name="colorGreenCor">#20ab1e</color>
+    <color name="trans">#00ffffff</color>
+
+    <drawable name="blueColor">#21a5de</drawable>
+    <color name="blueColorBut">#33ccff</color>
+    <color name="background">#f2f2f2</color>
+    <color name="bg_circles">#fcd8c3</color>
+    <color name="border_circles">#ca7d00</color>
+
+
+    <color name="border_circles_gray">#747474</color>
+    <color name="bg_circles_gray">#d7d7d7</color>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.nex3z.flowlayout.FlowLayout
+        android:id="@+id/balayi"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:background="#d9d0d0"
+        android:layout_weight="0.5"
+        android:layout_height="0dp"
+        app:flChildSpacing="@dimen/_10sdp"
+        app:flRowSpacing="@dimen/_10sdp"
+        app:flChildSpacingForLastRow="align"/>
+
+    <com.nex3z.flowlayout.FlowLayout
+        android:id="@+id/llMain"
+        android:layout_weight="0.5"
+        android:background="#e7dfdf"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        app:flRowSpacing="@dimen/_10sdp"
+        app:flChildSpacing="@dimen/_10sdp"
+        app:flChildSpacingForLastRow="align"/>
+
+    <Button
+        android:layout_weight="0.1"
+        android:layout_width="match_parent"
+        android:text="dsds"
+        android:id="@+id/fff"
+        android:layout_height="0dp" />
+
+</LinearLayout>

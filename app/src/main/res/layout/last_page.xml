@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_7sdp"
+        app:cardElevation="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_15sdp"
+                android:text="سوالات اولیه به پایان رسید در این مرحله شما به سوالاتی جواب میدید که اشتباه جواب دادید"
+                android:gravity="center"
+                android:lineSpacingExtra="@dimen/_5sdp"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_7sdp"
+        app:cardElevation="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_15sdp"
+                android:text="پاسخ های درست"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:lineSpacingExtra="@dimen/_5sdp"/>
+
+            <TextView
+                android:id="@+id/num_correct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_15sdp"
+                android:text="25"
+                android:textColor="@color/colorGreenLight"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:lineSpacingExtra="@dimen/_5sdp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_15sdp"
+                android:text="پاسخ های غلط"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:lineSpacingExtra="@dimen/_5sdp"/>
+
+            <TextView
+                android:id="@+id/num_wrong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_15sdp"
+                android:text="3"
+                android:textColor="@color/color_red"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:lineSpacingExtra="@dimen/_5sdp"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <com.javad.quizapplang.CustomView.MyButton
+        android:id="@+id/btnStart"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:text="شروع"
+        android:textColor="@color/colorWhite"
+        android:backgroundTint="@color/colorGreenLight"/>
+
+    <com.javad.quizapplang.CustomView.MyButton
+        android:id="@+id/btn_set_info"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="پشتیبان گیری"
+        android:textColor="@color/colorWhite"
+        android:backgroundTint="@color/color_blue"/>
+
+</LinearLayout>

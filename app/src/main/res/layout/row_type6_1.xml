@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    android:layout_gravity="center">
+
+    <FrameLayout
+        android:id="@+id/voice_volume"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:padding="@dimen/_3sdp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@color/colorPrimary"/>
+
+        <ImageView
+            android:id="@+id/voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_volume_up"
+            android:padding="9dp"/>
+
+    </FrameLayout>
+
+    <com.nex3z.flowlayout.FlowLayout
+        android:id="@+id/flow_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_15sdp"
+        android:gravity="center"
+        android:layout_toRightOf="@id/voice_volume"
+        android:layout_gravity="center"
+        app:flRowSpacing="@dimen/_10sdp"
+        app:flChildSpacing="@dimen/_10sdp"
+        app:flChildSpacingForLastRow="align">
+
+        <TextView
+            android:id="@+id/txt_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_12sdp"
+            android:gravity="center"/>
+
+    </com.nex3z.flowlayout.FlowLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/voice_volume"
+        android:text="hello how are ..."
+        android:textSize="14sp"
+        android:visibility="gone"
+        android:textColor="@color/colorBlack"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"/>
+
+    <FrameLayout
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:layout_gravity="center"
+        android:background="#e1e0e0"
+        android:layout_marginTop="@dimen/_40sdp">
+
+        <com.nex3z.flowlayout.FlowLayout
+            android:id="@+id/balayi"
+            android:layout_width="match_parent"
+            android:background="#00ffffff"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_height="match_parent"
+            app:flChildSpacing="@dimen/_10sdp"
+            app:flRowSpacing="@dimen/_10sdp"
+            app:flChildSpacingForLastRow="align"/>
+
+    </FrameLayout>
+
+    <com.nex3z.flowlayout.FlowLayout
+        android:id="@+id/llMain"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_toRightOf="@id/voice_volume"
+        android:gravity="center"
+        android:layout_gravity="center"
+        app:flRowSpacing="@dimen/_10sdp"
+        app:flChildSpacing="@dimen/_10sdp"
+        app:flChildSpacingForLastRow="align"/>
+
+</RelativeLayout>

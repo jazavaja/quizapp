@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/java"
+        android:title="Java"/>
+
+    <item
+        android:id="@+id/cplus"
+        android:title="C++"/>
+
+    <item
+        android:id="@+id/pjython"
+        android:title="Python"/>
+
+    <item
+        android:id="@+id/lpython"
+        android:title="Python"/>
+
+    <item
+        android:id="@+id/pythjon"
+        android:title="Python"/>
+
+    <item
+        android:id="@+id/phython"
+        android:title="Python"/>
+
+
+</menu>

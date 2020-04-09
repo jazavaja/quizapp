@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimn_eee">44dp</dimen>
+    <dimen name="spsoal">16sp</dimen>
+    <dimen name="spSosarSoal">22sp</dimen>
+</resources>

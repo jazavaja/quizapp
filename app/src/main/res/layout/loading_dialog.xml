@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#f4414141">
+
+    <LinearLayout
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_130sdp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/spin_kit"
+            style="@style/SpinKitView.ChasingDots"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.8"
+            android:padding="@dimen/_5sdp"
+            app:SpinKit_Color="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="لطفا صبر کنید ..."
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+</FrameLayout>

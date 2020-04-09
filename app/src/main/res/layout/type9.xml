@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_20sdp">
+
+            <com.javad.quizapplang.CustomView.NumTextView
+                android:id="@+id/head9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="کادر های مشخص شده را با کلمه های داده شده پر کنید"
+                android:gravity="right"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/colorBlack"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_gravity="right"/>
+
+            <com.javad.quizapplang.CustomView.NumTextView
+                android:id="@+id/name_conv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="question"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/color_header_footer"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_gravity="center"/>
+
+            <com.nex3z.flowlayout.FlowLayout
+                android:id="@+id/flow_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="left"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_gravity="center"
+                app:flRowSpacing="@dimen/_5sdp"
+                app:flChildSpacing="@dimen/_5sdp"
+                app:flChildSpacingForLastRow="align"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:soundEffectsEnabled="true"
+                android:visibility="gone"
+                android:layout_gravity="center_horizontal"/>
+
+            <com.nex3z.flowlayout.FlowLayout
+                android:id="@+id/llMain"
+                android:layout_weight="0.5"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                app:flRowSpacing="@dimen/_10sdp"
+                app:flChildSpacing="@dimen/_10sdp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnWidth="@dimen/_80sdp"
+        android:layout_margin="@dimen/_5sdp"
+        android:verticalSpacing="@dimen/_10sdp"
+        android:visibility="gone"
+        android:numColumns="auto_fit"/>
+
+</LinearLayout>

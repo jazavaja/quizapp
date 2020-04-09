@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/root"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:cardElevation="5dp"-->
+            <!--android:layout_margin="5dp">-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.javad.quizapplang.CustomView.NumTextView
+                android:id="@+id/head2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="عبارت زیر را ترجمه کن"
+                android:gravity="right"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_gravity="right"/>
+
+            <com.javad.quizapplang.CustomView.NumTextView
+                android:id="@+id/txt_body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="سلام علی"
+                android:visibility="gone"
+                android:gravity="center"
+                android:textSize="@dimen/_13sdp"
+                android:textColor="@color/colorBlack"
+                android:layout_gravity="center"/>
+
+            <com.nex3z.flowlayout.FlowLayout
+                android:id="@+id/flow_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                app:flRowSpacing="@dimen/_10sdp"
+                app:flChildSpacing="@dimen/_10sdp"
+                app:flChildSpacingForLastRow="align"/>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/bubble">
+
+                <com.javad.quizapplang.CustomView.NumTextViewBold
+                    android:id="@+id/subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:text="زیرنویس"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:textSize="@dimen/_11sdp"
+                    android:layout_gravity="center"
+                    />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <!--</android.support.v7.widget.CardView>-->
+
+        <FrameLayout
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:layout_gravity="center"
+            android:background="#e1e0e0"
+            >
+
+            <com.nex3z.flowlayout.FlowLayout
+                android:id="@+id/balayi"
+                android:layout_width="match_parent"
+                android:background="#00ffffff"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_4sdp"
+                android:layout_height="match_parent"
+                app:flChildSpacing="@dimen/_6sdp"
+                app:flRowSpacing="@dimen/_6sdp"
+                app:flChildSpacingForLastRow="align"/>
+
+        </FrameLayout>
+
+        <com.nex3z.flowlayout.FlowLayout
+            android:id="@+id/llMain"
+            android:layout_weight="0.5"
+            android:layout_width="@dimen/_240sdp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            app:flRowSpacing="@dimen/_6sdp"
+            app:flChildSpacing="@dimen/_6sdp"
+            app:flChildSpacingForLastRow="align"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:visibility="gone"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:id="@+id/clear"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_close"
+                android:padding="10dp"
+                android:layout_gravity="right|center_vertical"/>
+
+            <com.javad.quizapplang.CustomView.NumTextView
+                android:id="@+id/txt_answer2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="answer"
+                android:layout_marginRight="50dp"
+                android:textSize="16sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_row"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="50dp"/>
+
+        </FrameLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_answer"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:visibility="gone"/>
+
+        <GridView
+            android:id="@+id/grid_type2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnWidth="70dp"
+            android:visibility="gone"
+            android:numColumns="auto_fit"
+            android:layout_margin="5dp"
+            android:verticalSpacing="5dp"
+            android:horizontalSpacing="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+    </LinearLayout>
+</RelativeLayout>

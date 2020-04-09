@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.javad.quizapplang.PayList"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/header"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_footer_header">
+
+        <com.javad.quizapplang.CustomView.NumTextViewBold
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            android:text="خرید"/>
+
+    </FrameLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:tabTextColor="@color/colorWhite"
+        android:contextClickable="true"
+        app:tabIndicatorColor="@color/colorBlack"
+        app:tabSelectedTextColor="@color/colorBlack"
+        app:tabMode="fixed"
+        app:tabMaxWidth="0dp"
+        app:tabGravity="fill" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tabs"/>
+
+</LinearLayout>

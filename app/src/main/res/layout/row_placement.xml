@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/question_det"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="@dimen/spSosarSoal"
+            android:layout_gravity="center"
+            android:text="آن کلمه ای که شنیدی را فارسی تایپ کن"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_opts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:visibility="gone"
+            />
+
+        <RadioGroup
+
+            android:id="@+id/rg_opt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="60dp">
+
+            <RadioButton
+                android:id="@+id/rb_1"
+                android:layout_width="match_parent"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/spsoal"
+                android:layout_height="@dimen/dimn_eee"
+                android:background="@drawable/shape"
+                android:text="How are you?"
+                android:layout_gravity="end"
+                android:gravity="left|center"/>
+
+            <RadioButton
+                android:id="@+id/rb_2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimn_eee"
+                android:textSize="@dimen/spsoal"
+                android:text="2"
+                android:gravity="center"
+                android:background="@drawable/shape"
+
+                android:layout_marginTop="10dp"/>
+
+            <RadioButton
+                android:id="@+id/rb_3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimn_eee"
+                android:text="3"
+                android:gravity="center"
+                android:textSize="@dimen/spsoal"
+
+                android:background="@drawable/shape"
+                android:layout_marginTop="10dp"/>
+
+            <RadioButton
+                android:id="@+id/rb_4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimn_eee"
+                android:text="4"
+                android:textSize="@dimen/spsoal"
+
+                android:gravity="center"
+                android:background="@drawable/shape"
+                android:layout_marginTop="10dp"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</LinearLayout>

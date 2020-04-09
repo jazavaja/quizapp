@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_abc">40dp</dimen>
+    <dimen name="size_abc">15sp</dimen>
+
+    <dimen name="height_abc">50dp</dimen>
+    <dimen name="height_footer_header">48dp</dimen>
+
+
+</resources>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+<TextView
+    android:layout_marginLeft="@dimen/_9sdp"
+    android:layout_marginRight="@dimen/_9sdp"
+    android:layout_marginTop="@dimen/_23sdp"
+    android:textSize="@dimen/_15sdp"
+    android:textStyle="bold|normal"
+    android:lineSpacingExtra="@dimen/_5sdp"
+    android:layout_width="match_parent"
+    android:text="آزمون تعیین سطح، یک روش سریع برای ارزیابی سطح تقریبی دانش مخاطبان از زبان انگلیسی می باشد.  در پایان آزمون، علاوه بر نشان دادن پاسخ های درست و غلط، سطح متناسب شما بر اساس آزمون تعیین سطح مشخص خواهد شد پیشنهاد میشود که آزمون تعیین سطح داشته باشید
+"
+    android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@color/red_btn_bg_color"
+            android:text="لازم به ذکر است که فقط سه بار می توانید آزمون تعیین سطح داشته باشید"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/_9sdp"
+            android:layout_marginRight="@dimen/_9sdp"
+            android:textSize="@dimen/_15sdp"
+
+            android:textStyle="bold|normal"
+            android:lineSpacingExtra="@dimen/_5sdp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/placement"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:textSize="@dimen/_13sdp"
+            android:clickable="true"
+            android:textColor="@color/colorBlack"
+            android:onClick="placements"
+            android:backgroundTint="@color/colorBlue"
+            android:text="میخواهم تعین سطح کنم"
+            android:focusable="true" />
+
+        <Button
+            android:id="@+id/lessons"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:textSize="@dimen/_13sdp"
+            android:clickable="true"
+            android:backgroundTint="@color/colorBlue"
+            android:onClick="lessons"
+            android:text="نمیخواهم تعین سطح کنم"
+            android:focusable="true" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/ll_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorWhite"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:gravity="center">
+
+        <com.javad.quizapplang.CustomView.NumTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textGrid"
+            android:text="تعداد سوالات درست" />
+
+        <com.javad.quizapplang.CustomView.NumTextView
+            android:id="@+id/correct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_green"
+            android:text="2" />
+
+        <com.javad.quizapplang.CustomView.NumTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textGrid"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="تعداد سوالات غلط" />
+
+        <com.javad.quizapplang.CustomView.NumTextView
+            android:id="@+id/wrong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_red"
+            android:text="2" />
+
+        <com.javad.quizapplang.CustomView.NumTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textColor="@color/textGrid"
+            android:text="تعداد سوالات بی پاسخ" />
+
+        <com.javad.quizapplang.CustomView.NumTextView
+            android:id="@+id/soso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_blue"
+            android:text="22" />
+
+        <com.javad.quizapplang.CustomView.NumTextViewBold
+            android:id="@+id/set_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:text="سطح شما "/>
+
+        <Button
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="wrap_content"
+            android:text="شروع"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="start"/>
+
+    </LinearLayout>
+
+</FrameLayout>

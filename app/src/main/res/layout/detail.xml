@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:src="#58aeff"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="#284381"
+        android:text="جزییات محصول"
+        android:textSize="@dimen/_14sdp"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        app:cardCornerRadius="@dimen/_15sdp"
+        app:cardElevation="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_50sdp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_20sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_20sdp"
+                    android:hint="نام و نام خانوادگی"
+                    android:textSize="@dimen/_8sdp"
+                    android:layout_gravity="center"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_19sdp"
+                    android:hint="جواد سرلک"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_gravity="center"
+                    android:gravity="center" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="@color/colorBlack"
+                    android:layout_gravity="bottom"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_15sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_20sdp"
+                    android:hint="آدرس"
+                    android:textSize="@dimen/_8sdp"
+                    android:layout_gravity="center"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_19sdp"
+                    android:hint="اصفهان ..."
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_gravity="center"
+                    android:gravity="center" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="@color/colorBlack"
+                    android:layout_gravity="bottom"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_15sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_20sdp"
+                    android:hint="کد پستی"
+                    android:textSize="@dimen/_8sdp"
+                    android:layout_gravity="center"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_19sdp"
+                    android:hint="911252055"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_gravity="center"
+                    android:gravity="center" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="@color/colorBlack"
+                    android:layout_gravity="bottom"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_15sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_20sdp"
+                    android:hint="موبایل"
+                    android:textSize="@dimen/_8sdp"
+                    android:layout_gravity="center"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_19sdp"
+                    android:hint="09300653235"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_gravity="center"
+                    android:gravity="center" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="@color/colorBlack"
+                    android:layout_gravity="bottom"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_15sdp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_39sdp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:hint="100,000"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_10sdp"
+                        android:layout_gravity="center"
+                        android:gravity="bottom|center_horizontal" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:hint="تومان"
+                        android:textSize="@dimen/_10sdp"
+                        android:layout_gravity="center"
+                        android:gravity="bottom|left" />
+
+                </FrameLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="@color/colorBlack"
+                    android:layout_gravity="bottom"/>
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_15sdp">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="پست"
+                    android:checked="true"
+                    android:enabled="false"
+                    android:gravity="center"/>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="پیک"
+                    android:enabled="false"
+                    android:gravity="center"/>
+
+            </RadioGroup>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:text="بازگشت"
+                android:textColor="@color/colorWhite"
+                android:background="#23b2ef"
+                android:textSize="@dimen/_13sdp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.v7.widget.CardView>
+</FrameLayout>

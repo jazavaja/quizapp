@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardElevation="5dp"
+    android:layout_gravity="center_horizontal">
+
+    <!--<com.google.android.flexbox.FlexboxLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical"-->
+        <!--app:alignItems="center"-->
+        <!--android:layout_margin="5dp"-->
+        <!--app:alignContent="center"-->
+        <!--app:flexDirection="row"-->
+        <!--app:flexWrap="wrap">-->
+
+
+    <com.nex3z.flowlayout.FlowLayout
+        android:id="@+id/flow_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_15sdp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        app:flRowSpacing="@dimen/_10sdp"
+        app:flChildSpacing="@dimen/_10sdp"
+        app:flChildSpacingForLastRow="align"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:id="@+id/volume"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:layout_gravity="center">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@color/colorPrimary"
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_volume_up"/>
+
+        </FrameLayout>
+
+        <com.javad.quizapplang.CustomView.NumTextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="reza"
+            android:layout_marginLeft="@dimen/_5sdp"/>
+
+        <com.javad.quizapplang.CustomView.NumTextView
+            android:id="@+id/txt0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="how are you?"
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp" />
+
+        <FrameLayout
+            android:id="@+id/card1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:src="@drawable/shape"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+
+            <com.javad.quizapplang.CustomView.NumTextView
+                android:id="@+id/txt_card1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:minWidth="100dp"
+                android:text=""
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/shape"/>
+
+        </FrameLayout>
+
+        <com.javad.quizapplang.CustomView.NumTextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="how are you?"
+            android:layout_marginLeft="10dp"/>
+
+        <FrameLayout
+            android:id="@+id/card2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp">
+
+            <com.javad.quizapplang.CustomView.NumTextView
+                android:id="@+id/txt_card2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:minWidth="100dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text=""
+                android:background="@drawable/shape"
+                android:layout_gravity="center"/>
+
+        </FrameLayout>
+
+        <com.javad.quizapplang.CustomView.NumTextView
+            android:id="@+id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            tools:ignore="HardcodedText" />
+
+    <!--</com.google.android.flexbox.FlexboxLayout>-->
+
+    </LinearLayout>
+
+</FrameLayout>

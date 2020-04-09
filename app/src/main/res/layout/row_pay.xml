@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toLeftOf="@id/img"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/img"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_15sdp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img"
+                android:layout_width="@dimen/_55sdp"
+                android:layout_height="@dimen/_55sdp"
+                android:src="@drawable/ic_check_circle"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/_5sdp"
+                />
+
+            <com.javad.quizapplang.CustomView.NumTextViewBold
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="نام درس"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_13sdp"/>
+
+            <com.javad.quizapplang.CustomView.NumTextView
+                android:id="@+id/num_les"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="تعداد درس"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_13sdp"/>
+
+            <com.javad.quizapplang.CustomView.NumTextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_30sdp"
+                android:text="5000 تومان"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textColor="#0f869e"
+                android:textSize="@dimen/_13sdp"/>
+
+            <com.javad.quizapplang.CustomView.NumTextViewBold
+                android:id="@+id/btn_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_green"
+                android:textColor="@color/colorWhite"
+                android:gravity="center"
+                android:padding="@dimen/_3sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:clickable="true"
+                android:onClick="btn_save"
+                android:text="  فعالسازی  "
+                android:textSize="@dimen/_13sdp"
+                android:focusable="true" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>

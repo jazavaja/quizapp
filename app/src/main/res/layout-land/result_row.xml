@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="#0e4997"
+            android:elevation="@dimen/_3sdp"/>
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:background="#b1e0ff"
+            android:orientation="horizontal">
+
+
+            <com.javad.quizapplang.CustomView.EnTextView
+                android:id="@+id/tik"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="correct"
+                android:layout_weight="0.5"
+                android:textColor="@color/textGrid"
+                android:textSize="@dimen/_13sdp"
+                android:gravity="center"/>
+
+            <View
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="match_parent"
+                android:background="#0e4997"
+                android:layout_alignParentBottom="true"/>
+
+            <com.javad.quizapplang.CustomView.EnTextView
+                android:id="@+id/number"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="no"
+                android:layout_weight="0.2"
+                android:textColor="@color/textGrid"
+                android:textSize="@dimen/_13sdp"
+                android:gravity="center"/>
+
+            <View
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="match_parent"
+                android:background="#0e4997"
+                android:layout_alignParentBottom="true"/>
+
+            <!--<HorizontalScrollView-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="2">-->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:minWidth="@dimen/_60sdp"
+                        android:layout_weight="1">
+
+                        <com.javad.quizapplang.CustomView.EnTextView
+                            android:id="@+id/first"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="ایتم اول"
+                            android:textColor="@color/textGrid"
+                            android:textSize="@dimen/_13sdp"
+                            android:paddingLeft="@dimen/_15sdp"
+                            android:paddingRight="@dimen/_5sdp"
+                            android:gravity="center"/>
+
+                        <ImageView
+                            android:id="@+id/img1"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:src="@drawable/ic_check_circle"
+                            android:tint="@color/colorGreen"
+                            android:visibility="gone"/>
+
+                    </FrameLayout>
+
+                    <View
+                        android:layout_width="@dimen/_1sdp"
+                        android:layout_height="match_parent"
+                        android:background="#0e4997"
+                        android:layout_alignParentBottom="true"/>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:minWidth="@dimen/_60sdp"
+                        android:layout_weight="1">
+
+                        <com.javad.quizapplang.CustomView.EnTextView
+                            android:id="@+id/second"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="ایتم دوم"
+                            android:paddingLeft="@dimen/_15sdp"
+                            android:paddingRight="@dimen/_5sdp"
+                            android:textColor="@color/textGrid"
+                            android:textSize="@dimen/_13sdp"
+                            android:gravity="center"/>
+
+                        <ImageView
+                            android:id="@+id/img2"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:src="@drawable/ic_check_circle"
+                            android:tint="@color/colorGreen"
+                            android:visibility="gone"/>
+
+                    </FrameLayout>
+
+                    <View
+                        android:layout_width="@dimen/_1sdp"
+                        android:layout_height="match_parent"
+                        android:background="#0e4997"
+                        android:layout_alignParentBottom="true"/>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:minWidth="@dimen/_60sdp"
+                        android:layout_weight="1">
+
+                        <com.javad.quizapplang.CustomView.EnTextView
+                            android:id="@+id/third"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="ایتم سوم"
+                            android:paddingLeft="@dimen/_15sdp"
+                            android:paddingRight="@dimen/_5sdp"
+                            android:textColor="@color/textGrid"
+                            android:textSize="@dimen/_13sdp"
+                            android:gravity="center"/>
+
+                        <ImageView
+                            android:id="@+id/img3"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:src="@drawable/ic_check_circle"
+                            android:tint="@color/colorGreen"
+                            android:visibility="gone"/>
+
+                    </FrameLayout>
+
+                    <View
+                        android:layout_width="@dimen/_1sdp"
+                        android:layout_height="match_parent"
+                        android:background="#0e4997"
+                        android:layout_alignParentBottom="true"/>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:minWidth="@dimen/_70sdp"
+                        android:layout_weight="1">
+
+                        <com.javad.quizapplang.CustomView.EnTextView
+                            android:id="@+id/fourth"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="ایتم چهارم"
+                            android:textColor="@color/textGrid"
+                            android:textSize="@dimen/_13sdp"
+                            android:paddingLeft="@dimen/_15sdp"
+                            android:paddingRight="@dimen/_5sdp"
+                            android:gravity="center"/>
+
+                        <ImageView
+                            android:id="@+id/img4"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:src="@drawable/ic_check_circle"
+                            android:tint="@color/colorGreen"
+                            android:visibility="gone"/>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            <!--</HorizontalScrollView>-->
+            
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="#0e4997"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

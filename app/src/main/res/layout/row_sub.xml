@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="1dp"
+    android:id="@+id/root_layout"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@color/color_row"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.javad.quizapplang.CustomView.NumTextView
+        android:id="@+id/txt_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="how are"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_12sdp"/>
+
+</FrameLayout>

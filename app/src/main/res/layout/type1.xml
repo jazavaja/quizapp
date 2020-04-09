@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <com.javad.quizapplang.CustomView.NumTextView
+            android:id="@+id/head1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="سلام را انتخاب کن"
+            android:gravity="right"
+            android:textColor="@color/colorBlack"
+            android:layout_margin="@dimen/_10sdp"
+            android:textSize="@dimen/_13sdp"
+            android:layout_gravity="right"/>
+
+    </FrameLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:numColumns="2"
+        android:visibility="gone"/>
+
+    <FrameLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/ll1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="bottom"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/img1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        app:riv_corner_radius="@dimen/_10sdp"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_2sdp"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:layout_weight="0.85"
+                        android:src="@drawable/ic_launcher_background" />
+
+                    <RadioButton
+                        android:id="@+id/caption1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:text="how are she"
+                        android:gravity="center"
+                        android:layout_weight="0.15"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="bottom"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/img2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        app:riv_corner_radius="@dimen/_10sdp"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_2sdp"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:layout_weight="0.85"
+                        android:src="@drawable/ic_launcher_background" />
+
+                    <RadioButton
+                        android:id="@+id/caption2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:text="how are she"
+                        android:gravity="center"
+                        android:layout_weight="0.15"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/ll3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="bottom"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/img3"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        app:riv_corner_radius="@dimen/_10sdp"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_2sdp"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:layout_weight="0.85"
+                        android:src="@drawable/ic_launcher_background" />
+
+                    <RadioButton
+                        android:id="@+id/caption3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:text="how are she"
+                        android:gravity="center"
+                        android:layout_weight="0.15"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="bottom"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/img4"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        app:riv_corner_radius="@dimen/_10sdp"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_2sdp"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:layout_weight="0.85"
+                        android:src="@drawable/ic_launcher_background" />
+
+                    <RadioButton
+                        android:id="@+id/caption4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:text="how are she"
+                        android:gravity="center"
+                        android:layout_weight="0.15"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

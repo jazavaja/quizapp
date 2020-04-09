@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardElevation="5dp"
+    android:layout_gravity="center_horizontal">
+
+
+    <com.nex3z.flowlayout.FlowLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center"
+        app:flRowSpacing="@dimen/_5sdp"
+        app:flChildSpacing="@dimen/_5sdp"
+        app:flChildSpacingForLastRow="align"
+        android:layout_margin="@dimen/_5sdp">
+
+    <FrameLayout
+            android:id="@+id/volume"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:padding="@dimen/_3sdp"
+            android:layout_gravity="center">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@color/colorPrimary"
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_volume_up"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_35sdp"
+            android:text="A:"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/txt0"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="how are you?"
+            android:visibility="gone"
+            android:layout_marginLeft="10dp"/>
+
+        <FrameLayout
+            android:id="@+id/card1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:src="@drawable/shape"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/et1"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_35sdp"
+                android:gravity="center"
+                android:minWidth="@dimen/_100sdp"
+                android:text=""
+                android:textSize="@dimen/_12sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:layout_gravity="center"
+                android:background="@drawable/shape"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="how are you?"
+            android:layout_marginLeft="@dimen/_10sdp"/>
+
+        <FrameLayout
+            android:id="@+id/card2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_10sdp">
+
+            <EditText
+                android:id="@+id/et2"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_35sdp"
+                android:gravity="center"
+                android:minWidth="@dimen/_100sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:textSize="@dimen/_12sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:text=""
+                android:background="@drawable/shape"
+                android:layout_gravity="center"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_35sdp"
+            android:gravity="center"
+            android:text="?"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            tools:ignore="HardcodedText" />
+
+    </com.nex3z.flowlayout.FlowLayout>
+
+</FrameLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#e6e6e6">
+
+    <LinearLayout
+        android:id="@+id/ll_place"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:descendantFocusability="blocksDescendants">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_margin="@dimen/_7sdp"
+            app:cardCornerRadius="@dimen/_5sdp"
+            app:cardElevation="5dp">
+
+            <com.javad.quizapplang.CustomView.NumTextViewBold
+                android:id="@+id/question"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="hi how are you?"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/_8sdp"
+                android:layout_margin="@dimen/_3sdp"/>
+
+        </android.support.v7.widget.CardView>
+
+        <com.javad.quizapplang.CustomView.NumTextView
+            android:id="@+id/question_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_7sdp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_7sdp"
+            android:nestedScrollingEnabled="true"/>
+
+        <Button
+            android:id="@+id/btn_end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/colorBlue"
+            android:text="تمام"
+            android:textSize="15sp"
+            android:visibility="gone"
+            android:textColor="@color/colorWhite"/>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/correct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:text="answer"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/wrong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:text="answer"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/dontanswer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:text="answer"
+                    android:layout_weight="1"/>
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</FrameLayout>

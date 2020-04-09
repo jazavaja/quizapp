@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#69bbc8ff"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:src="@drawable/vvvvv"
+            android:layout_marginTop="@dimen/_70sdp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_horizontal"/>
+
+        <com.javad.quizapplang.CustomView.NumTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Enjoy Learning Like Gaming"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="@color/colorTransparent"/>
+
+        <LinearLayout
+            android:id="@+id/sign_up"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_70sdp"
+            android:orientation="vertical">
+
+            <com.javad.quizapplang.CustomView.MyEditText
+                android:textColorHint="#ffffff"
+                android:padding="10dp"
+                android:drawableLeft="@drawable/ic_account"
+                android:hint="شماره همراه"
+                android:gravity="center"
+                android:background="@drawable/shape_et"
+                android:id="@+id/et_mobile"
+                android:inputType="number"
+                android:maxLength="11"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp" />
+
+            <net.cachapa.expandablelayout.ExpandableLayout
+                android:id="@+id/ex_password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                app:el_expanded="true"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <com.javad.quizapplang.CustomView.MyEditText
+                    android:id="@+id/et_password"
+                    android:textColorHint="#ffffff"
+                    android:padding="10dp"
+                    android:drawableLeft="@drawable/ic_lock"
+                    android:hint="کد پیامک شده"
+                    android:gravity="center"
+                    android:background="@drawable/shape_et"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:ignore="TextFields" />
+
+            </net.cachapa.expandablelayout.ExpandableLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/info"
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:orientation="vertical">
+
+            <com.javad.quizapplang.CustomView.MyEditText
+                android:id="@+id/et_username"
+                android:textColorHint="#ffffff"
+                android:padding="10dp"
+                android:drawableLeft="@drawable/ic_account"
+                android:hint="نام کاربری"
+                android:gravity="center"
+                android:background="@drawable/shape_et"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp" />
+
+            <com.javad.quizapplang.CustomView.MyEditText
+                android:id="@+id/et_name"
+                android:textColorHint="#ffffff"
+                android:padding="10dp"
+                android:drawableLeft="@drawable/ic_lock"
+                android:hint="نام و نام خانوادگی"
+                android:gravity="center"
+                android:background="@drawable/shape_et"
+                android:textColor="#fff"
+                android:textSize="@dimen/_12sdp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="TextFields"
+                android:layout_marginTop="@dimen/_10sdp" />
+
+            <com.javad.quizapplang.CustomView.MyEditText
+                android:id="@+id/et_education"
+                android:textColorHint="#ffffff"
+                android:padding="10dp"
+                android:drawableLeft="@drawable/ic_lock"
+                android:hint="تحصیلات"
+                android:gravity="center"
+                android:background="@drawable/shape_et"
+                android:textColor="#fff"
+                android:textSize="@dimen/_12sdp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="TextFields"
+                android:layout_marginTop="@dimen/_10sdp"/>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_30sdp">
+
+            <com.javad.quizapplang.CustomView.MyButton
+                android:id="@+id/btn_send_number"
+                android:background="@drawable/shape_btn1"
+                android:text="ارسال شماره"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="#fff"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp" />
+
+            <com.javad.quizapplang.CustomView.MyButton
+                android:id="@+id/btn_setcode"
+                android:layout_above="@+id/textView2"
+                android:background="@drawable/shape_btn1"
+                android:text="ارسال کد"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:visibility="gone"/>
+
+            <com.javad.quizapplang.CustomView.MyButton
+                android:id="@+id/btn_info"
+                android:layout_above="@+id/textView2"
+                android:background="@drawable/shape_btn1"
+                android:text="ارسال اطلاعات"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:visibility="gone"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

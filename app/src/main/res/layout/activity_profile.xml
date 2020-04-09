@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.javad.quizapplang.ProfileActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_180sdp"
+            android:src="@drawable/bg_profile"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/shape_profile"
+            android:scaleType="centerCrop"/>
+
+    </LinearLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:id="@+id/ref"
+        android:layout_height="wrap_content">
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_30sdp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_75sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_5sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.javad.quizapplang.CustomView.MyButton
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="تعیین سطح دوباره"
+                        android:id="@+id/agianTayinSath"
+                        android:layout_height="wrap_content" />
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_45sdp"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_20sdp">
+
+                        <com.javad.quizapplang.CustomView.MyEditText
+                            android:id="@+id/username"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="نام کاربری"
+                            android:gravity="center"
+                            android:textSize="@dimen/_15sdp"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/colorBlack"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_20sdp">
+
+                        <com.javad.quizapplang.CustomView.MyEditText
+                            android:id="@+id/email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="ایمیل"
+                            android:gravity="center"
+                            android:inputType="textEmailAddress"
+                            android:textSize="@dimen/_13sdp"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/colorBlack"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_20sdp">
+
+                        <com.javad.quizapplang.CustomView.MyEditText
+                            android:id="@+id/name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="نام و نام خانوادگی"
+                            android:gravity="center"
+                            android:textSize="@dimen/_13sdp"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/colorBlack"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_20sdp">
+
+                        <com.javad.quizapplang.CustomView.MyEditText
+                            android:id="@+id/education"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="تحصیلات"
+                            android:gravity="center"
+                            android:textSize="@dimen/_13sdp"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/colorBlack"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_20sdp"
+                        android:layout_marginBottom="@dimen/_20sdp">
+
+                        <com.javad.quizapplang.CustomView.MyEditText
+                            android:id="@+id/mobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="شماره همراه"
+                            android:gravity="center"
+                            android:textSize="@dimen/_13sdp"
+                            android:enabled="false"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/colorBlack"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <FrameLayout
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:layout_gravity="center_horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/pic_profile"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_70sdp"
+                    android:background="#00ffffff"
+                    android:src="@drawable/profile_img"
+                    app:civ_border_width="@dimen/_2sdp"
+                    app:civ_border_color="@color/colorWhite"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:background="#00ffffff"
+                    android:src="@color/colorWhite"
+                    android:layout_gravity="bottom|right" />
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/ic_add_circle_black_24dp"
+                    android:tint="#000ed1"
+                    android:layout_gravity="bottom|right"/>
+                <!--</android.support.v7.widget.CardView>-->
+            </FrameLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                app:cardElevation="@dimen/_2sdp"
+                app:cardCornerRadius="@dimen/_5sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.javad.quizapplang.CustomView.NumTextViewBold
+                        android:id="@+id/score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="امتیاز کل: 430"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:textColor="@color/colorBlack"/>
+
+                    <com.javad.quizapplang.CustomView.NumTextViewBold
+                        android:id="@+id/level"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="امتیاز کل: 430"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginBottom="@dimen/_20sdp"
+                        android:textColor="@color/colorBlack"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </FrameLayout>
+
+        <com.javad.quizapplang.CustomView.MyButton
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@color/color_green"
+            android:textColor="@color/colorWhite"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:clickable="true"
+            android:onClick="btn_save"
+            android:text="ذخیره"
+            android:focusable="true" />
+
+
+
+    </LinearLayout>
+    </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
